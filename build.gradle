@@ -1,4 +1,4 @@
-apply plugin: 'java-library'
+apply plugin: 'java'
 apply plugin: 'application'
 				
 mainClassName = 'is.ru.tictactoe.TicTacToe'
