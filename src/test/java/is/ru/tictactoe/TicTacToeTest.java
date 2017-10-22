@@ -10,3 +10,4 @@ public class TicTacToeTest {
 		TicTacToe game = new TicTacToe();
 		assertEquals('o' ,game.changePlayer());
 	}
+}

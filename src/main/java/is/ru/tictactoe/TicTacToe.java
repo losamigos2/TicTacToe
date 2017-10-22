@@ -22,4 +22,8 @@ public class TicTacToe {
 
         return currentPlayer;
     }
+
+    public static void main(String[] args) {
+    	
+    }
 }
