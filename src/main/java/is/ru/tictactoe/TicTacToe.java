@@ -4,9 +4,9 @@ import static spark.Spark.*;
 
 public class TicTacToe {
 
-	private char[][] board; 
+	private char[][] board;
     private static char currentPlayer;
-			
+
     public TicTacToe() {
         board = new char[3][3];
         currentPlayer = 'x';
