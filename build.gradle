@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'application'
+				
+mainClassName = 'is.ru.tictactoe.TicTacToe'
+				
+repositories {
+	mavenCentral()
+}
+				
+dependencies {
+	compile	'joda-time:joda-time:2.9.9'
+	compile 'com.google.code.gson:gson:2.8.2'
+	testImplementation 'junit:junit:4.12'
+	compile 'com.sparkjava:spark-core:2.6.0'
+
+}
+task stage {
+  dependsOn installDist
+}
+
