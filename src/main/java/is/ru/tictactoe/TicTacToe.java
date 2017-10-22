@@ -1,9 +1,9 @@
-pacpackage is.ru.tictactoe;
+package is.ru.tictactoe;
 
 import static spark.Spark.*;
 
 public class TicTacToe {
-	
+
 	private char[][] board; 
     private static char currentPlayer;
 			
