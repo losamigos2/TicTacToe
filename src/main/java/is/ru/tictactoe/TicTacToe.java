@@ -1,5 +1,7 @@
 pacpackage is.ru.tictactoe;
 
+import static spark.Spark.*;
+
 public class TicTacToe {
 	
 	private char[][] board; 
