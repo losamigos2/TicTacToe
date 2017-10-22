@@ -1,5 +1,11 @@
 package is.ru.tictactoe;
 
-public class TicTacToeTest {
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
+public class TicTacToeTest {
+	@Test
+	public void testHello(){
+		assertEquals("Hello!",TicTacToe.Hello());
+	}
 	}
