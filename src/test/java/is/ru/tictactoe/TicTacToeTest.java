@@ -5,7 +5,8 @@ import org.junit.Test;
 
 public class TicTacToeTest {
 	@Test
-	public void testHello(){
-		assertEquals("Hello!",TicTacToe.Hello());
+	public void testEmptyStringReturnsZero() {
+			StringCalculator Calculator = new StringCalculator();
+			assertEquals(0, Calculator.add(""));
 	}
 	}
