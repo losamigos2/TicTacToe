@@ -51,6 +51,16 @@ public class TicTacToe {
 	            }
 	        }
 	}
+	public boolean isBoardFull() {
+	    for (int i = 0; i < 3; i++){
+	    	for (int j = 0; i < 3; i++){
+	        	if (board[i][j] != 'x' && board[i][j] != 'o') {
+	          	return false;
+	        	}
+	      	}
+	    }
+	    return true;
+	}
 
 	public boolean checkRows(){
 	    if((board[0][0] == currentPlayer) && (board[0][1] == currentPlayer) && (board[0][2] == currentPlayer)){
