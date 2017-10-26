@@ -44,6 +44,17 @@ public class TicTacToeTest {
 	}
 
 	@Test
+	public void testCheckDiognals(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(7);
+	    game.placeMark(4);
+	    game.placeMark(3);
+
+	    assertEquals(true, game.checkDiognals());
+	}
+
+
+	@Test
 	public void testisBoardFull_empty(){
 	  	TicTacToe game = new TicTacToe();
 	  	assertEquals(false ,game.isBoardFull());
