@@ -45,6 +45,17 @@ public class TicTacToeTest {
 	}
 
 	@Test
+	public void testCheckDiognals(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(7);
+	    game.placeMark(5);
+	    game.placeMark(3);
+
+	    assertEquals(true, game.checkDiognals());
+	}
+
+
+	@Test
 	public void testisBoardFull_empty(){
 	  	TicTacToe game = new TicTacToe();
 	  	assertEquals(false ,game.isBoardFull());
@@ -58,5 +69,23 @@ public class TicTacToeTest {
 	    	game.placeMark(i);
 	  	}
 	  	assertEquals(true ,game.isBoardFull());
+	}
+
+	public void testCheckColumns(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(1);
+	    game.placeMark(4);
+	    game.placeMark(7);
+
+	    assertEquals(true, game.checkRows());
+	}
+
+	public void testCheckColumnsFalse(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(2);
+	    game.placeMark(3);
+	    game.placeMark(4);
+
+	    assertEquals(false, game.checkRows());
 	}
 }
