@@ -25,4 +25,11 @@ public class TicTacToeTest {
 		assertEquals('8' ,testBoard[2][1]);
 		assertEquals('9' ,testBoard[2][2]);
 	}
+	@Test
+	public void testplaceMark(){
+		TicTacToe game = new TicTacToe();
+		char [][] testboard = game.getBoard();
+		game.placeMark(5);
+		assertEquals('x',testboard[1][1]);
+	}
 }
