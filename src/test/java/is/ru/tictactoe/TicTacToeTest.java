@@ -70,4 +70,22 @@ public class TicTacToeTest {
 	  	}
 	  	assertEquals(true ,game.isBoardFull());
 	}
+
+	public void testCheckColumns(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(1);
+	    game.placeMark(4);
+	    game.placeMark(7);
+
+	    assertEquals(true, game.checkRows());
+	}
+
+	public void testCheckColumnsFalse(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(2);
+	    game.placeMark(3);
+	    game.placeMark(4);
+
+	    assertEquals(false, game.checkRows());
+	}
 }

@@ -87,6 +87,18 @@ public class TicTacToe {
 	    return false;
 	}
 
+	 public boolean checkColumns(){
+        if((board[0][0] == currentPlayer) && (board[1][0] == currentPlayer) && (board[2][0] == currentPlayer)){
+            return true;
+        }
+        else if((board[0][1] == currentPlayer) && (board[1][1] == currentPlayer) && (board[2][1] == currentPlayer)){
+            return true;
+        }
+        else if((board[0][2] == currentPlayer) && (board[1][2] == currentPlayer) && (board[2][2] == currentPlayer)){
+            return true;
+        }
+        return false;
+    }
 
     public static void main(String[] args) {
 
