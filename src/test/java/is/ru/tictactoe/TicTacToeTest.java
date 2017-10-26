@@ -32,4 +32,19 @@ public class TicTacToeTest {
 		game.placeMark(5);
 		assertEquals('x',testboard[1][1]);
 	}
+	@Test
+	public void testisBoardFull_empty(){
+	  	TicTacToe game = new TicTacToe();
+	  	assertEquals(false ,game.isBoardFull());
+	}
+
+	// Test full board
+	@Test
+	public void testisBoardFull_full(){
+	  	TicTacToe game = new TicTacToe();
+	  	for (int i = 1; i < 10; i++){
+	    	game.placeMark(i);
+	  	}
+	  	assertEquals(true ,game.isBoardFull());
+	}
 }
