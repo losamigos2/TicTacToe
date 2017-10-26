@@ -37,15 +37,15 @@ public class TicTacToe {
     }
 
     public void placeMark(int address){
-	int counter = 1;
-	for (int i = 0; i<3; i++){
-		for (int j = 0; j<3; j++){
-			if (counter == address){
-				board[i][j] = currentPlayer;
+			int counter = 1;
+			for (int i = 0; i<3; i++){
+				for (int j = 0; j<3; j++){
+					if (counter == address){
+						board[i][j] = currentPlayer;
+					}
+					counter++;
+				}
 			}
-			counter++;
-		}
-	}
     }
 
     public static void main(String[] args) {
