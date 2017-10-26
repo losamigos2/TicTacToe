@@ -51,6 +51,16 @@ public class TicTacToe {
 	            }
 	        }
 	}
+	public boolean isBoardFull() {
+	    for (int i = 0; i < 3; i++){
+	    	for (int j = 0; i < 3; i++){
+	        	if (board[i][j] != 'x' && board[i][j] != 'o') {
+	          	return false;
+	        	}
+	      	}
+	    }
+	    return true;
+	}
 
     public static void main(String[] args) {
 
