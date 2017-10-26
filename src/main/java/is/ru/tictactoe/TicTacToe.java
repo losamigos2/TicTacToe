@@ -4,7 +4,7 @@ import static spark.Spark.*;
 
 public class TicTacToe {
 
-	private char[][] board;
+	private static char[][] board;
     private static char currentPlayer;
 
     public TicTacToe() {
@@ -24,7 +24,7 @@ public class TicTacToe {
         return currentPlayer;
     }
 
-    public void initializeBoard() {
+    public static void initializeBoard() {
         board[0][0] = '1';
         board[0][1] = '2';
         board[0][2] = '3';
@@ -34,6 +34,10 @@ public class TicTacToe {
         board[2][0] = '7';
         board[2][1] = '8';
         board[2][2] = '9';
+    }
+
+    public static char[][] getBoard() {
+        return board;
     }
     
     public static void main(String[] args) {
