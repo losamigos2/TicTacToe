@@ -25,14 +25,15 @@ public class TicTacToe {
     }
 
     public void initializeBoard() {
-        // Loop through rows
-        for (int i = 0; i < 3; i++) {
-			
-            // Loop through columns
-            for (int j = 0; j < 3; j++) {
-                board[i][j] = '-';
-            }
-        }
+        board[0][0] = '1';
+        board[0][1] = '2';
+        board[0][2] = '3';
+        board[1][0] = '4';
+        board[1][1] = '5';
+        board[1][2] = '6';
+        board[2][0] = '7';
+        board[2][1] = '8';
+        board[2][2] = '9';
     }
     
     public static void main(String[] args) {
