@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.tictactoe.TicTacToeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-26T16:18:06" hostname="Evas-MacBook-Pro.local" time="0.004">
+<testsuite name="is.ru.tictactoe.TicTacToeTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-10-26T16:42:21" hostname="Evas-MacBook-Pro.local" time="0.004">
   <properties/>
-  <testcase name="testInitializeBoard" classname="is.ru.tictactoe.TicTacToeTest" time="0.003"/>
+  <testcase name="testInitializeBoard" classname="is.ru.tictactoe.TicTacToeTest" time="0.002"/>
+  <testcase name="testIsBoardFull_full" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
   <testcase name="testplaceMark" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
   <testcase name="testChangePlayer" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
+  <testcase name="testCheckRows" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
+  <testcase name="testIsBoardFull_empty" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

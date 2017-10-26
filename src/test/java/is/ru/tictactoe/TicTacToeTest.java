@@ -31,16 +31,54 @@ public class TicTacToeTest {
 		char [][] testboard = game.getBoard();
 		game.placeMark(5);
 		assertEquals('x',testboard[1][1]);
+		assertEquals(true,game.placeMark(1));
 	}
+
 	@Test
-	public void testisBoardFull_empty(){
+	public void testCheckRows(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(4);
+	    game.placeMark(5);
+	    game.placeMark(6);
+
+	    assertEquals(true, game.checkRows());
+	}
+
+	public void testCheckRowsFalse(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(9);
+	    game.placeMark(7);
+	    game.placeMark(5);
+
+	    assertEquals(false, game.checkRows());
+	}
+	public void testCheckColumns(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(1);
+	    game.placeMark(4);
+	    game.placeMark(7);
+
+	    assertEquals(true, game.checkRows());
+	}
+
+	public void testCheckColumnsFalse(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(2);
+	    game.placeMark(3);
+	    game.placeMark(4);
+
+	    assertEquals(false, game.checkRows());
+	}
+
+	@Test
+	public void testIsBoardFull_empty(){
 	  	TicTacToe game = new TicTacToe();
 	  	assertEquals(false ,game.isBoardFull());
 	}
 
 	// Test full board
 	@Test
-	public void testisBoardFull_full(){
+	public void testIsBoardFull_full(){
 	  	TicTacToe game = new TicTacToe();
 	  	for (int i = 1; i < 10; i++){
 	    	game.placeMark(i);
