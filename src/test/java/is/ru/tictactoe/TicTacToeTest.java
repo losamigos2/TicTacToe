@@ -47,7 +47,7 @@ public class TicTacToeTest {
 	public void testCheckDiognals(){
 	    TicTacToe game = new TicTacToe();
 	    game.placeMark(7);
-	    game.placeMark(4);
+	    game.placeMark(5);
 	    game.placeMark(3);
 
 	    assertEquals(true, game.checkDiognals());
