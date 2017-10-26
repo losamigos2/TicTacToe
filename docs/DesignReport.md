@@ -7,10 +7,10 @@
 ## 2. Prototypes
 
 ### Wireframe
-
 ![Image of Wireframe](images/Wireframe.png)
 
 ### Graphic Design
+![Image of GraphicDesign](images/GraphicDesign.png)
 
 ## 3. Class Diagram
 
