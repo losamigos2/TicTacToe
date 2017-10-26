@@ -31,6 +31,7 @@ public class TicTacToeTest {
 		char [][] testboard = game.getBoard();
 		game.placeMark(5);
 		assertEquals('x',testboard[1][1]);
+		assertEquals(true,game.placeMark(1));
 	}
 	@Test
 	public void testisBoardFull_empty(){
