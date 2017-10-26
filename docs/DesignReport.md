@@ -11,10 +11,10 @@ This project is a simple and fun game of **TicTacToe**. TicTacToe is a game wher
 ## 2. Prototypes
 
 ### Wireframe
-
 ![Image of Wireframe](images/Wireframe.png)
 
 ### Graphic Design
+![Image of GraphicDesign](images/GraphicDesign.png)
 
 ## 3. Class Diagram
 <div style="text-align: justify">
