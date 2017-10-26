@@ -12,7 +12,7 @@ This project is a simple and fun game of **TicTacToe**. TicTacToe is a game wher
 
 ### Wireframe
 
-![Image of Yaktocat](images/Wireframe.png)
+![Image of Wireframe](images/Wireframe.png)
 
 ### Graphic Design
 
