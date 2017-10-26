@@ -8,7 +8,7 @@
 
 ### Wireframe
 
-![Image of Yaktocat](/Users/unnurhalldorsdottir/Dropbox/HR Unnur/2. ár/Haustönn 2017/Hugbúnaðarfræði/Seinni hluti/TicTacToe/docs/images/Wireframe.png)
+![Image of Wireframe](images/Wireframe.png)
 
 ### Graphic Design
 
