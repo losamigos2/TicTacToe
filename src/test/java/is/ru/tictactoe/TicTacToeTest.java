@@ -32,4 +32,15 @@ public class TicTacToeTest {
 		game.placeMark(5);
 		assertEquals('x',testboard[1][1]);
 	}
+
+	@Test
+	public void testCheckRows(){
+	    TicTacToe game = new TicTacToe();
+	    game.placeMark(4);
+	    game.placeMark(5);
+	    game.placeMark(6);
+
+	    assertEquals(true, game.checkRows());
+	}
+
 }
