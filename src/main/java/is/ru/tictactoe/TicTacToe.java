@@ -35,7 +35,19 @@ public class TicTacToe {
         board[2][1] = '8';
         board[2][2] = '9';
     }
-    
+
+		public void placeMark(int address){
+			int counter = 1;
+			for (int i = 0; i<3; i++){
+				for (int j = 0; j<3; j++){
+					if (counter == address){
+						board[i][j] = currentPlayer;
+					}
+					counter++;
+				}
+			}
+		}
+
     public static void main(String[] args) {
 
     }
