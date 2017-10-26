@@ -14,7 +14,6 @@ public class TicTacToeTest {
 	@Test
 	public void testInitializeBoard() {
 		TicTacToe game = new TicTacToe();
-		game.initializeBoard();
 		char[][] testBoard = game.getBoard();
 		assertEquals('1' ,testBoard[0][0]);
 		assertEquals('2' ,testBoard[0][1]);
