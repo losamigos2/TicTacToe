@@ -39,7 +39,19 @@ public class TicTacToe {
     public static char[][] getBoard() {
         return board;
     }
-    
+
+	public static void placeMark(int address){
+	        int counter = 1;
+	        for (int i = 0; i<3; i++){
+	            for (int j = 0; j<3; j++){
+	                if (counter == address){
+	                    board[i][j] = currentPlayer;
+	                }
+	                counter++;
+	            }
+	        }
+	}
+
     public static void main(String[] args) {
 
     }
