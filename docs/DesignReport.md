@@ -4,8 +4,7 @@
 
 ## 1. Introduction
 <div style="text-align: justify">
-This project is a simple and fun game of **TicTacToe**. TicTacToe is a game where there are two players against each other and try to have either three __X's__ or __O's__ in a row, depending on which they represent. There is an image of the TicTacToe board for the project in the *Prototypes* section and a more detailed design of it can be seen in the *Graphic design* section. In the Class diagram section is a diagram of the two classes that represent this project, which are the *business layer* and the *user interface layer*.
-
+This project is a simple and fun game of **TicTacToe**. TicTacToe is a game where there are two players against each other and try to have either three **X's** or ** O's ** in a row, depending on which they represent. There is an image of the TicTacToe board for the project in the *Prototypes* section and a more detailed design of it can be seen in the *Graphic design* section. In the Class diagram section is a diagram of the two classes that represent this project, which are the *business layer* and the *user interface layer*.
 <div>
 
 ## 2. Prototypes
@@ -19,7 +18,6 @@ This project is a simple and fun game of **TicTacToe**. TicTacToe is a game wher
 ## 3. Class Diagram
 <div style="text-align: justify">
 A class diagram shows the relationships between classes, objects, attributes and operations. It resembles a flowchart in which classes are portrayed as boxes, each box showing the name of the class, attributes are and methods. There are two classes in this system, an **user interface class** and a **service class**. The UI class gets information from user and displays that information. The service class handles all calculations and main functions for the system.
-
 <div>
 
 ## 4. Programming rules
