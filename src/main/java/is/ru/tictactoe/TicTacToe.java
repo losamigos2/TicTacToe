@@ -64,6 +64,14 @@ public class TicTacToe {
 	    return true;
 	}
 
+	public boolean checkWinner(){
+		if(checkRows() == true || checkDiognals() == true || checkColumns() == true){
+			System.out.println("Player" + currentPlayer + "Has won the game");
+			return true;
+		}
+		return false;
+	}
+
 	public boolean checkRows(){
 	    if((board[0][0] == currentPlayer) && (board[0][1] == currentPlayer) && (board[0][2] == currentPlayer)){
 	        return true;
