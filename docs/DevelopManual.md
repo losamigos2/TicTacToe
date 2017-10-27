@@ -1,18 +1,24 @@
 # Development Manual
 
-# <span style="color:rgb(66, 152, 244)"> TicTacToe </span>
+# TicTacToe
 
-## 1. What you need to build your project
+## 1. Introduction
+<div style="text-align: justify">
+This manual is intended for system developers. It is ideal that the administrators have basic knowledge of Test Driven Development, or TDD, and Java.
+<div>
+
+
+## 2. What you need to build your project
 <div style="text-align: justify">
 Text here
 <div>
 
-## 2. Which source control client you need
+## 3. Which source control client you need
 <div style="text-align: justify">
 Text here
 <div>
 
-## 3. What access to source control build environment you need
+## 4. What access to source control build environment you need
 <div style="text-align: justify">
 Text here
 <div>
