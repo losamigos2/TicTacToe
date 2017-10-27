@@ -77,8 +77,7 @@ public class TicTacToeTest {
 	    game.placeMark(1);
 	    game.placeMark(4);
 	    game.placeMark(7);
-
-	    assertEquals(true, game.checkRows());
+	    assertEquals(true, game.checkColumns());
 	}
 
 	@Test
@@ -88,7 +87,7 @@ public class TicTacToeTest {
 	    game.placeMark(3);
 	    game.placeMark(4);
 
-	    assertEquals(false, game.checkRows());
+	    assertEquals(false, game.checkColumns());
 	}
 
 	@Test
@@ -99,5 +98,32 @@ public class TicTacToeTest {
 		game.placeMark(8);
 
 		assertEquals(true, game.checkWinner());
+	}
+	@Test
+	public void testgetIndexes(){
+		TicTacToe game = new TicTacToe();
+		assertEquals(0, game.getIndexes(1)[0]);
+		assertEquals(0, game.getIndexes(1)[1]);
+		assertEquals(1, game.getIndexes(6)[0]);
+		assertEquals(2, game.getIndexes(6)[1]);
+		assertEquals(2, game.getIndexes(9)[0]);
+		assertEquals(2, game.getIndexes(9)[1]);
+	}
+	@Test
+	public void testcellAvailable(){
+		TicTacToe game = new TicTacToe();
+		game.placeMark(3);
+		assertEquals(false, game.cellAvailable(3));
+		assertEquals(true, game.cellAvailable(1));
+
+	}
+	@Test
+	public void testplayRound(){
+		TicTacToe game = new TicTacToe();
+		assertEquals(0, game.playRound(1));
+		assertEquals(0, game.playRound(4));
+		assertEquals(0, game.playRound(2));
+		assertEquals(0, game.playRound(5));
+		assertEquals(1, game.playRound(3));
 	}
 }

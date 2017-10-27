@@ -95,7 +95,7 @@ public class TicTacToe {
 	    return false;
 	}
 
-	 public boolean checkColumns(){
+	public boolean checkColumns(){
         if((board[0][0] == currentPlayer) && (board[1][0] == currentPlayer) && (board[2][0] == currentPlayer)){
             return true;
         }
@@ -107,6 +107,45 @@ public class TicTacToe {
         }
         return false;
     }
+
+	public  int[] getIndexes(int value){
+		int counter = 1;
+		int [] indexes = new int[2];
+	    for (int i = 0; i<3; i++){
+	        for (int j = 0; j<3; j++){
+	            if (counter == value){
+					indexes[0] = i;
+					indexes[1] = j;
+	                return indexes;
+	            }
+				counter++;
+	        }
+	    }
+		return indexes;
+	}
+	public boolean cellAvailable(int value){
+		int [] in = new int[2];
+		in = getIndexes(value);
+		if (board[in[0]][in[1]] != 'x' && board[in[0]][in[1]] != 'o'){
+			return true;
+		}
+		return false;
+	}
+	public int playRound(int place){
+		boolean status = placeMark(place);
+		if (status){
+			if (checkWinner()){
+				return 1;
+			}
+			else if(isBoardFull()){
+				return 2;
+			}
+			currentPlayer = changePlayer();
+			return 0;
+		}
+		return -1;
+
+	}
 
     public static void main(String[] args) {
 
