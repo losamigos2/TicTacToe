@@ -99,4 +99,14 @@ public class TicTacToeTest {
 
 		assertEquals(true, game.checkWinner());
 	}
+	@Test
+	public void testgetIndexes(){
+		TicTacToe game = new TicTacToe();
+		assertEquals(0, game.getIndexes(1)[0]);
+		assertEquals(0, game.getIndexes(1)[1]);
+		assertEquals(1, game.getIndexes(6)[0]);
+		assertEquals(2, game.getIndexes(6)[1]);
+		assertEquals(2, game.getIndexes(9)[0]);
+		assertEquals(2, game.getIndexes(9)[1]);
+	}
 }
