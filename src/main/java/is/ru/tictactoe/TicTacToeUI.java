@@ -47,17 +47,17 @@ public class TicTacToeUI {
         do {
             TicTacToe game = new TicTacToe();
 			int status = 0;
-
+			displayBoard(game.getBoard());
 
             while(status == 0) {
-                displayBoard(game.getBoard());
                 int mark = getInput(game.getPlayer());
 
-                while((mark < 1|| mark > 9 )&& game.cellAvailable(mark)) {
+                while((mark < 1|| mark > 9 ) || !game.cellAvailable(mark)) {
                     System.out.println("Input must be a number between 1 and 9 and available!");
                     mark = getInput(game.getPlayer());
                 }
                 status = game.playRound(mark);
+				displayBoard(game.getBoard());
             }
             if (status == 1) {
 				System.out.println("Player  " + game.getPlayer() + " is the winner!");
