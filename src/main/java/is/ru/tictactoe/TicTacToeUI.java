@@ -45,21 +45,23 @@ public class TicTacToeUI {
         char play = 'y';
         while(play == 'y') {
             TicTacToe game = new TicTacToe();
-            
-            displayBoard(game.getBoard());
-            int mark = getInput(game.getPlayer());
-            
-            while(mark < 1|| mark > 9) {
-                System.out.println("Input must be a number between 1 and 9! ");
-                mark = getInput(game.getPlayer());
-            }
 
-            if(game.cellAvailable(mark)) {
-                game.playRound(mark);
-            }
-            else {
+            while(!game.isBoardFull()) {
+                displayBoard(game.getBoard());
+                int mark = getInput(game.getPlayer());
+            
+                while(mark < 1|| mark > 9) {
+                    System.out.println("Input must be a number between 1 and 9! ");
+                    mark = getInput(game.getPlayer());
+                }
+                if(game.cellAvailable(mark)) {
+                    game.playRound(mark);
+                }
+                else {
 
+                }
             }
+            
         }
     }   
 }
