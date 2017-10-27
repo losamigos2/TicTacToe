@@ -8,7 +8,7 @@
 ## 2. What software you need
 * [git](https://git-scm.com/downloads)
 * [Gradle](https://gradle.org/install/)
-* [Travis CI](https://travis-ci.org/)
+* [Travis-Ci](https://travis-ci.org/)
 * [Java v.8](https://java.com/en/download/)
 
 
