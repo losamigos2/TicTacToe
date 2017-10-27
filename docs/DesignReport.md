@@ -4,7 +4,9 @@
 
 ## 1. Introduction
 <div style="text-align: justify">
-> This project is a simple and fun game of **TicTacToe**. TicTacToe is a game where there are two players against each other and try to have either three **X's** or ** O's ** in a row, depending on which they represent. There is an image of the TicTacToe board for the project in the *Prototypes* section and a more detailed design of it can be seen in the *Graphic design* section. In the Class diagram section is a diagram of the two classes that represent this project, which are the *business layer* and the *user interface layer*.
+<pre>
+> This project is a simple and fun game of <b>TicTacToe</b>. TicTacToe is a game where there are two players against each other and try to have either three <b>X's</b> or <b>O's</b> in a row, depending on which they represent. There is an image of the TicTacToe board for the project in the <i>Prototypes</i> section and a more detailed design of it can be seen in the <i>Graphic design</i> section. In the Class diagram section is a diagram of the two classes that represent this project, which are the <i>business layer</i> and the <i>user interface layer</i>.
+</pre>
 </div>
 
 ## 2. Prototypes
