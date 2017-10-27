@@ -19,6 +19,7 @@ This project is a simple and fun game of **TicTacToe**. TicTacToe is a game wher
 <div style="text-align: justify">
 A class diagram shows the relationships between classes, objects, attributes and operations. It resembles a flowchart in which classes are portrayed as boxes, each box showing the name of the class, attributes are and methods. There are two classes in this system, an **user interface class** and a **service class**. The UI class gets information from user and displays that information. The service class handles all calculations and main functions for the system.
 </div>
+![Image of Class Diagram](images/ClassDiagram.png)
 
 ## 4. Programming rules
 <div style="text-align: justify">
