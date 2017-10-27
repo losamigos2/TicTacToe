@@ -6,17 +6,18 @@
 <div style="text-align: justify">
 In order to set this project up and get it to run you need to have gradle set up on your git bash(Windows) or terminal(Linux or Mac). To set up project you must go to
 https://github.com/losamigos2/TicTacToe and clone project to your own machine using git bash or terminal with the command:
-git clone: https://github.com/losamigos2/TicTacToe.git:
+git clone https://github.com/losamigos2/TicTacToe.git:
 
+</div>
 <img src="images/Gitclone.png" width="200">
 
 
-</div>
 <div style="text-align: justify">
-When you have done so you can find the project on your machine where you cloned it. To run the project you need to use the command: gradle clean build run
+When you have done so you can find the project on your machine where you cloned it. To run the project you need to use the command: gradle clean build run</div>
 
 <img src="images/Gradlerun.png" width="200">
 
+<div style="text-align: justify">
 which makes the git bash/terminal run the game where you can play it.
 <div>
 
