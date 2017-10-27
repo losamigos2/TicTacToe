@@ -1,6 +1,6 @@
 # Design Report
 
-<img src="images/Logo.png" height="500" width="200">
+<img src="images/Logo.png" height="100" width="300">
 
 ## 1. Introduction
 <div style="text-align: justify">
