@@ -8,17 +8,14 @@ In order to set this project up and get it to run you need to have gradle set up
 https://github.com/losamigos2/TicTacToe and clone project to your own machine using git bash or terminal with the command:
 git clone: https://github.com/losamigos2/TicTacToe.git:
 
-/*![Image of Wireframe](images/Gitclone.png)*/
-
-
-<img src="images/Gitclone.png" width="100">
+<img src="images/Gitclone.png" width="200">
 
 
 </div>
 <div style="text-align: justify">
 When you have done so you can find the project on your machine where you cloned it. To run the project you need to use the command: gradle clean build run
 
-![Image of Gradlerun](images/Gradlerun.png)
+<img src="images/Gradlerun.png" width="200">
 
 which makes the git bash/terminal run the game where you can play it.
 <div>
