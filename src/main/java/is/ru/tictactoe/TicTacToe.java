@@ -123,6 +123,14 @@ public class TicTacToe {
 	    }
 		return indexes;
 	}
+	public boolean cellAvailable(int value){
+		int [] in = new int[2];
+		in = getIndexes(value);
+		if (board[in[0]][in[1]] != 'x' && board[in[0]][in[1]] != 'o'){
+			return true;
+		}
+		return false;
+	}
 
     public static void main(String[] args) {
 

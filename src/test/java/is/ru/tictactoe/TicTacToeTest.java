@@ -109,4 +109,12 @@ public class TicTacToeTest {
 		assertEquals(2, game.getIndexes(9)[0]);
 		assertEquals(2, game.getIndexes(9)[1]);
 	}
+	@Test
+	public void testcellAvailable(){
+		TicTacToe game = new TicTacToe();
+		game.placeMark(3);
+		assertEquals(false, game.cellAvailable(3));
+		assertEquals(true, game.cellAvailable(1));
+
+	}
 }
