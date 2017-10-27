@@ -40,6 +40,10 @@ public class TicTacToe {
         return board;
     }
 
+     public static char getPlayer() {
+    	return currentPlayer;
+    }
+
 	public static boolean placeMark(int address){
 		int counter = 1;
 	    for (int i = 0; i<3; i++){
