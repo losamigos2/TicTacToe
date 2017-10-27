@@ -6,11 +6,13 @@ public class TicTacToe {
 
 	private static char[][] board;
     private static char currentPlayer;
+	private static int count;
 
     public TicTacToe() {
         board = new char[3][3];
         currentPlayer = 'x';
         initializeBoard();
+		count = 0;
     }
 
     public static char changePlayer() {
@@ -40,33 +42,27 @@ public class TicTacToe {
         return board;
     }
 
-	public static boolean placeMark(int address){
-		int counter = 1;
-	    for (int i = 0; i<3; i++){
-	        for (int j = 0; j<3; j++){
-	            if (counter == address){
-	                board[i][j] = currentPlayer;
-					return true;
-	            }
-				counter++;
-	        }
-	    }
-		return false;
+     public static char getPlayer() {
+    	return currentPlayer;
+    }
+
+	public static void placeMark(int address){
+		int [] index = getIndexes(address);
+		board[index[0]][index[1]] = currentPlayer;
+		count++;
 	}
 	public boolean isBoardFull() {
-	    for (int i = 0; i < 3; i++){
-	    	for (int j = 0; i < 3; i++){
-	        	if (board[i][j] != 'x' && board[i][j] != 'o') {
-	          	return false;
-	        	}
-	      	}
-	    }
-	    return true;
+	    return count == 9;
 	}
 
 	public boolean checkWinner(){
 		if(checkRows() == true || checkDiognals() == true || checkColumns() == true){
-			System.out.println("Player" + currentPlayer + "Has won the game");
+
+			return true;
+		}
+
+		else if(checkRows() == true || checkDiognals() == true || checkColumns() == true){
+
 			return true;
 		}
 		return false;
@@ -108,7 +104,7 @@ public class TicTacToe {
         return false;
     }
 
-	public  int[] getIndexes(int value){
+	public static int[] getIndexes(int value){
 		int counter = 1;
 		int [] indexes = new int[2];
 	    for (int i = 0; i<3; i++){
@@ -124,27 +120,22 @@ public class TicTacToe {
 		return indexes;
 	}
 	public boolean cellAvailable(int value){
-		int [] in = new int[2];
-		in = getIndexes(value);
+		int [] in = getIndexes(value);
 		if (board[in[0]][in[1]] != 'x' && board[in[0]][in[1]] != 'o'){
 			return true;
 		}
 		return false;
 	}
 	public int playRound(int place){
-		boolean status = placeMark(place);
-		if (status){
-			if (checkWinner()){
-				return 1;
-			}
-			else if(isBoardFull()){
-				return 2;
-			}
-			currentPlayer = changePlayer();
-			return 0;
+		placeMark(place);
+		if (checkWinner()){
+			return 1;
 		}
-		return -1;
-
+		else if(isBoardFull()){
+			return 2;
+		}
+		currentPlayer = changePlayer();
+		return 0;
 	}
 
     public static void main(String[] args) {
