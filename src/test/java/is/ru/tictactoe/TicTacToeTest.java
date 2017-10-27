@@ -77,8 +77,7 @@ public class TicTacToeTest {
 	    game.placeMark(1);
 	    game.placeMark(4);
 	    game.placeMark(7);
-
-	    assertEquals(true, game.checkRows());
+	    assertEquals(true, game.checkColumns());
 	}
 
 	@Test
@@ -88,7 +87,7 @@ public class TicTacToeTest {
 	    game.placeMark(3);
 	    game.placeMark(4);
 
-	    assertEquals(false, game.checkRows());
+	    assertEquals(false, game.checkColumns());
 	}
 
 	@Test
