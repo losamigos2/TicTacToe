@@ -1,6 +1,6 @@
 # Design Report
 
-#  TicTacToe
+<img src="images/Logo.png" width="">
 
 ## 1. Introduction
 <div style="text-align: justify">
