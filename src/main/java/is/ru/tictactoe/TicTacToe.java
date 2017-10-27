@@ -131,6 +131,21 @@ public class TicTacToe {
 		}
 		return false;
 	}
+	public int playRound(int place){
+		boolean status = placeMark(place);
+		if (status){
+			if (checkWinner()){
+				return 1;
+			}
+			else if(isBoardFull()){
+				return 2;
+			}
+			currentPlayer = changePlayer();
+			return 0;
+		}
+		return -1;
+
+	}
 
     public static void main(String[] args) {
 

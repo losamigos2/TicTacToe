@@ -117,4 +117,13 @@ public class TicTacToeTest {
 		assertEquals(true, game.cellAvailable(1));
 
 	}
+	@Test
+	public void testplayRound(){
+		TicTacToe game = new TicTacToe();
+		assertEquals(0, game.playRound(1));
+		assertEquals(0, game.playRound(4));
+		assertEquals(0, game.playRound(2));
+		assertEquals(0, game.playRound(5));
+		assertEquals(1, game.playRound(3));
+	}
 }
