@@ -41,7 +41,7 @@ public class TicTacToeTest {
 	    game.placeMark(5);
 	    game.placeMark(6);
 
-	    assertEquals(true, game.checkRows());
+	    assertEquals(true, game.checkRows('x'));
 	}
 
 	@Test
@@ -51,7 +51,7 @@ public class TicTacToeTest {
 	    game.placeMark(5);
 	    game.placeMark(3);
 
-	    assertEquals(true, game.checkDiognals());
+	    assertEquals(true, game.checkDiognals('x'));
 	}
 
 
@@ -77,7 +77,7 @@ public class TicTacToeTest {
 	    game.placeMark(1);
 	    game.placeMark(4);
 	    game.placeMark(7);
-	    assertEquals(true, game.checkColumns());
+	    assertEquals(true, game.checkColumns('x'));
 	}
 
 	@Test
@@ -87,7 +87,7 @@ public class TicTacToeTest {
 	    game.placeMark(3);
 	    game.placeMark(4);
 
-	    assertEquals(false, game.checkColumns());
+	    assertEquals(false, game.checkColumns('x'));
 	}
 
 	@Test

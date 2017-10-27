@@ -69,44 +69,51 @@ public class TicTacToe {
 	}
 
 	public boolean checkWinner(){
-		if(checkRows() == true || checkDiognals() == true || checkColumns() == true){
+		char playerX = 'x';
+		char playerO = 'o';
+		if(checkRows(playerX) == true || checkDiognals(playerX) == true || checkColumns(playerX) == true){
+			System.out.println("Player" + currentPlayer + "Has won the game");
+			return true;
+		}
+
+		else if(checkRows(playerO) == true || checkDiognals(playerO) == true || checkColumns(playerO) == true){
 			System.out.println("Player" + currentPlayer + "Has won the game");
 			return true;
 		}
 		return false;
 	}
 
-	public boolean checkRows(){
-	    if((board[0][0] == currentPlayer) && (board[0][1] == currentPlayer) && (board[0][2] == currentPlayer)){
+	public boolean checkRows(char player){
+	    if((board[0][0] == player) && (board[0][1] == player) && (board[0][2] == player)){
 	        return true;
 	    }
-	    else if((board[1][0] == currentPlayer) && (board[1][1] == currentPlayer) && (board[1][2] == currentPlayer)){
+	    else if((board[1][0] == player) && (board[1][1] == player) && (board[1][2] == player)){
 	        return true;
 	    }
-	    else if((board[2][0] == currentPlayer) && (board[2][1] == currentPlayer) && (board[2][2] == currentPlayer)){
-	        return true;
-	    }
-	    return false;
-	}
-
-	public boolean checkDiognals(){
-	    if((board[0][0] == currentPlayer) && (board[1][1] == currentPlayer) && (board[2][2] == currentPlayer)){
-	        return true;
-	    }
-	    else if((board[0][2] == currentPlayer) && (board[1][1] == currentPlayer) && (board[2][0] == currentPlayer)){
+	    else if((board[2][0] == player) && (board[2][1] == player) && (board[2][2] == player)){
 	        return true;
 	    }
 	    return false;
 	}
 
-	public boolean checkColumns(){
-        if((board[0][0] == currentPlayer) && (board[1][0] == currentPlayer) && (board[2][0] == currentPlayer)){
+	public boolean checkDiognals(char player){
+	    if((board[0][0] == player) && (board[1][1] == player) && (board[2][2] == player)){
+	        return true;
+	    }
+	    else if((board[0][2] == player) && (board[1][1] == player) && (board[2][0] == player)){
+	        return true;
+	    }
+	    return false;
+	}
+
+	public boolean checkColumns(char player){
+        if((board[0][0] == player) && (board[1][0] == player) && (board[2][0] == player)){
             return true;
         }
-        else if((board[0][1] == currentPlayer) && (board[1][1] == currentPlayer) && (board[2][1] == currentPlayer)){
+        else if((board[0][1] == player) && (board[1][1] == player) && (board[2][1] == player)){
             return true;
         }
-        else if((board[0][2] == currentPlayer) && (board[1][2] == currentPlayer) && (board[2][2] == currentPlayer)){
+        else if((board[0][2] == player) && (board[1][2] == player) && (board[2][2] == player)){
             return true;
         }
         return false;
