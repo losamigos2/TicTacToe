@@ -23,13 +23,13 @@ public class TicTacToeUI {
 
     public static int getInput(char player) {
         System.out.println("Position of " + player + ": ");
+        System.out.println("Input a number from 1 to 9 and press enter");
         Scanner in = new Scanner(System.in);
         String inputString = in.nextLine();
         int input = 0;
 
         try{
             input = Integer.parseInt(inputString);
-            System.out.println("Input a number from 1 to 9 and press enter");
             System.out.println("Input: " + input);
 
             return input;
