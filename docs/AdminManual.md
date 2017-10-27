@@ -23,7 +23,7 @@ When finished you can clone the project onto your machine from the projects [res
 The readme.md file gives the administrator information on test results from Travis-CI.
 
 ## 5. How to run project on local machine
-In order to run the program on your local machine you need to can run from the root of the project the command: ??? The program should run on either your git bash (Windows) or terminal(Linux or Mac).
+In order to run the program on your local machine you need to can run from the root of the project the command: ??? The program should run on either your git bash (Windows) or terminal (Linux or Mac).
 
 ## 6. Team structure
 The team consists of 6 developers where each member has a specific role: developer, tester, administrator and product owner. The team strives for continuous delivery to make sure that the user/s of the program can have access to the most up to date version of the program. The teams strives to minimize the risks involved in deploying new versions of the program.
