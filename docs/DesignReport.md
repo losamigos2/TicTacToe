@@ -1,6 +1,6 @@
 # Design Report
 
-# <span style="color:rgb(66, 152, 244)"> TicTacToe </span>
+#  TicTacToe
 
 ## 1. Introduction
 <div style="text-align: justify">
