@@ -95,7 +95,7 @@ public class TicTacToe {
 	    return false;
 	}
 
-	 public boolean checkColumns(){
+	public boolean checkColumns(){
         if((board[0][0] == currentPlayer) && (board[1][0] == currentPlayer) && (board[2][0] == currentPlayer)){
             return true;
         }
@@ -107,6 +107,22 @@ public class TicTacToe {
         }
         return false;
     }
+
+	public  int[] getIndexes(int value){
+		int counter = 1;
+		int [] indexes = new int[2];
+	    for (int i = 0; i<3; i++){
+	        for (int j = 0; j<3; j++){
+	            if (counter == value){
+					indexes[0] = i;
+					indexes[1] = j;
+	                return indexes;
+	            }
+				counter++;
+	        }
+	    }
+		return indexes;
+	}
 
     public static void main(String[] args) {
 
