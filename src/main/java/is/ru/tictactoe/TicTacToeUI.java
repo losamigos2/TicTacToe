@@ -29,6 +29,7 @@ public class TicTacToeUI {
 
         try{
             input = Integer.parseInt(inputString);
+            System.out.println("Input a number from 1 to 9 and press enter");
             System.out.println("Input: " + input);
 
             return input;
