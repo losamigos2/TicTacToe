@@ -42,7 +42,7 @@ public class TicTacToeUI {
     }
 
     public static void main(String[] args) {
-        
+
         String play = "";
         do {
             TicTacToe game = new TicTacToe();
@@ -60,7 +60,7 @@ public class TicTacToeUI {
                 status = game.playRound(mark);
             }
             if (status == 1) {
-				System.out.println("Player  " + game.getPlayer() + "is the winner!");
+				System.out.println("Player  " + game.getPlayer() + " is the winner!");
 			}
 			else if ( status == 2){
 				System.out.println("The game has ended with a draw!");
