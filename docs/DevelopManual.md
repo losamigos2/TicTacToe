@@ -22,7 +22,7 @@ When finished you can clone the project onto your development machine from the p
 ## 4. How to build and run locally
 In order to clean, build and run the program on your local machine you need to run from the root of the project the command:
 
-![Image of command](images/Gradlerun.png)
+<img src="images/Gradlerun.png" width="200">
 
 ```The program should run on either your git bash (Windows) or terminal (Linux or Mac)```
 
@@ -40,7 +40,7 @@ You should work on new features on a new branch, which would be named the same a
 > git push origin <b>the new branch</b>
 
 After this a pull request is made, then other members of the team approve and merge to master.  
-```Note: You do not have to branch out when update-ing documents```
+```Note: You do not have to branch out when updating documents```
 
 ## 6. Coding rules
 Appropriate coding rules can be found in the [Design Report](https://github.com/losamigos2/TicTacToe/blob/master/docs/DesignReport.md), chapter 4.

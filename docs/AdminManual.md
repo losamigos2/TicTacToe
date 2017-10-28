@@ -27,7 +27,7 @@ The [readme.md](https://github.com/losamigos2/TicTacToe/blob/master/README.md) f
 ## 5. How to run project on local machine
 In order to run the program on your local machine you need to run from the root of the project the command:
 
-![Image of command](images/Gradlerun.png)
+<img src="images/Gradlerun.png" width="200">
 
 ```The program should run on either your git bash (Windows) or terminal (Linux or Mac)```
 
