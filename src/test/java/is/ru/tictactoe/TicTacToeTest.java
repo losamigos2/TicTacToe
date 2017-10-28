@@ -28,10 +28,8 @@ public class TicTacToeTest {
 	@Test
 	public void testplaceMark(){
 		TicTacToe game = new TicTacToe();
-		char [][] testboard = game.getBoard();
 		game.placeMark(5);
-		assertEquals('x',testboard[1][1]);
-		assertEquals(true,game.placeMark(1));
+		assertEquals('x',game.getBoard()[1][1]);
 	}
 
 	@Test
@@ -41,7 +39,7 @@ public class TicTacToeTest {
 	    game.placeMark(5);
 	    game.placeMark(6);
 
-	    assertEquals(true, game.checkRows('x'));
+	    assertEquals(true, game.checkRows());
 	}
 
 	@Test
@@ -51,7 +49,7 @@ public class TicTacToeTest {
 	    game.placeMark(5);
 	    game.placeMark(3);
 
-	    assertEquals(true, game.checkDiognals('x'));
+	    assertEquals(true, game.checkDiognals());
 	}
 
 
@@ -77,7 +75,7 @@ public class TicTacToeTest {
 	    game.placeMark(1);
 	    game.placeMark(4);
 	    game.placeMark(7);
-	    assertEquals(true, game.checkColumns('x'));
+	    assertEquals(true, game.checkColumns());
 	}
 
 	@Test
@@ -87,7 +85,7 @@ public class TicTacToeTest {
 	    game.placeMark(3);
 	    game.placeMark(4);
 
-	    assertEquals(false, game.checkColumns('x'));
+	    assertEquals(false, game.checkColumns());
 	}
 
 	@Test
