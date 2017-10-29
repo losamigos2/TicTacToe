@@ -57,12 +57,6 @@ public class TicTacToe {
 
 	public boolean checkWinner(){
 		if(checkRows() == true || checkDiognals() == true || checkColumns() == true){
-
-			return true;
-		}
-
-		else if(checkRows() == true || checkDiognals() == true || checkColumns() == true){
-
 			return true;
 		}
 		return false;
