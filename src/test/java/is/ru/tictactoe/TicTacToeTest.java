@@ -133,5 +133,30 @@ public class TicTacToeTest {
 		assertEquals('o', game.getPlayer());
 	}
 
+	@Test
+	public void testDisplayBoard(){
+		TicTacToeUI UI = new TicTacToeUI();
+		TicTacToe game = new TicTacToe();
+		char[][] testBoard = game.getBoard();
+		game.placeMark(1);
+		game.changePlayer();
+		game.placeMark(3);
+		game.placeMark(8);
+		game.changePlayer();
+		game.placeMark(2);
+
+		assertEquals('x' ,testBoard[0][0]);
+		assertEquals('x' ,testBoard[0][1]);
+		assertEquals('o' ,testBoard[0][2]);
+		assertEquals('4' ,testBoard[1][0]);
+		assertEquals('5' ,testBoard[1][1]);
+		assertEquals('6' ,testBoard[1][2]);
+		assertEquals('7' ,testBoard[2][0]);
+		assertEquals('o' ,testBoard[2][1]);
+		assertEquals('9' ,testBoard[2][2]);
+
+	}
+
+
 
 }
