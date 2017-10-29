@@ -1,2 +1,2 @@
 ignore:
-"src/main/java/is/ru/tictactoe/TicTacToeUI.java"
+  - "src/main/java/is/ru/tictactoe/TicTacToeUI.java"
