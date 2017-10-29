@@ -125,11 +125,20 @@ public class TicTacToeTest {
 		assertEquals(1, game.playRound(3));
 	}
 
+  @Test
+	public void testGetPlayer(){
+		TicTacToe game = new TicTacToe();
+		assertEquals('x', game.getPlayer());
+		game.changePlayer();
+		assertEquals('o', game.getPlayer());
+	}
+
 	@Test
 	public void testDisplayBoard(){
 		TicTacToeUI UI = new TicTacToeUI();
 		TicTacToe game = new TicTacToe();
-		char[][] testBoard = UI.getBoard();
+		char[][] testBoard = game.getBoard();
+
 		game.placeMark(1);
 		game.changePlayer();
 		game.placeMark(3);

@@ -42,25 +42,25 @@ public class TicTacToeUI {
     }
 
     public static void main(String[] args) {
-        
+
         String play = "";
         do {
             TicTacToe game = new TicTacToe();
 			int status = 0;
-
+			displayBoard(game.getBoard());
 
             while(status == 0) {
-                displayBoard(game.getBoard());
                 int mark = getInput(game.getPlayer());
 
-                while((mark < 1|| mark > 9 )&& game.cellAvailable(mark)) {
+                while((mark < 1|| mark > 9 ) || !game.cellAvailable(mark)) {
                     System.out.println("Input must be a number between 1 and 9 and available!");
                     mark = getInput(game.getPlayer());
                 }
                 status = game.playRound(mark);
+				displayBoard(game.getBoard());
             }
             if (status == 1) {
-				System.out.println("Player  " + game.getPlayer() + "is the winner!");
+				System.out.println("Player  " + game.getPlayer() + " is the winner!");
 			}
 			else if ( status == 2){
 				System.out.println("The game has ended with a draw!");
