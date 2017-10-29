@@ -7,5 +7,5 @@ before_install:
 after_success:
 - codecov
 - if [ "$TRAVIS_BRANCH" = "master" -a]; then '[ -f ~/.dropbox_uploader ] && ./dropbox_uploader.sh upload build/libs/TicTacToe.jar travis-artifacts/$TRAVIS_JOB_NUMBER/';
-- if [ "$TRAVIS_BRANCH" = "master" -a]; then '[ -f ~/.dropbox_uploader ] && ./dropbox_uploader.sh upload docs travis-artifacts/$TRAVIS_JOB_NUMBER/';
+- if [ "$TRAVIS_BRANCH" = "master" -a]; then '[ -f ~/.dropbox_uploader ] && ./dropbox_uploader.sh upload docs/ travis-artifacts/$TRAVIS_JOB_NUMBER/';
 
