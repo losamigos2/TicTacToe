@@ -3,8 +3,8 @@ jdk:
 - oraclejdk8
 before_install:
 - pip install --user codecov
-  - '[ "$TRAVIS_SECURE_ENV_VARS" == "false" ] || openssl aes-256-cbc -K $encrypted_..._key -iv $encrypted_..._iv -in .dropbox_uploader.enc -out ~/.dropbox_uploader -d'
+- '[ "$TRAVIS_SECURE_ENV_VARS" == "false" ] || openssl aes-256-cbc -K $encrypted_..._key -iv $encrypted_..._iv -in .dropbox_uploader.enc -out ~/.dropbox_uploader -d'
 after_success:
 - codecov
 after_failure:
-  - '[ -f ~/.dropbox_uploader ] && ./dropbox_uploader.sh upload t/results/ travis-artifacts/$TRAVIS_JOB_NUMBER/'
+- '[ -f ~/.dropbox_uploader ] && ./dropbox_uploader.sh upload t/results/ travis-artifacts/$TRAVIS_JOB_NUMBER/'
