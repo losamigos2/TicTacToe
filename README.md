@@ -5,6 +5,9 @@
 ### Build Status
 [![Build Status](https://travis-ci.org/losamigos2/TicTacToe.svg?branch=master)](https://travis-ci.org/losamigos2/TicTacToe)
 
+### Code coverage
+[![Code Coverage](https://img.shields.io/codecov/c/github/losamigos2/TicTacToe/coverage.svg)](https://codecov.io/github/losamigos2/TicTacToe/coverage.svg?branch=master)
+
 ### Documentation
 > [Design Report](https://github.com/losamigos2/TicTacToe/blob/master/docs/DesignReport.md)
 

@@ -9,6 +9,7 @@ jacocoTestReport {
         html.enabled = true
     }
 }
+check.dependsOn jacocoTestReport
 mainClassName = 'is.ru.tictactoe.TicTacToeUI'
 jar {
 	manifest{

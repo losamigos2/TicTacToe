@@ -1,2 +1,5 @@
 language: java
-before-deploy: "echo 'ready??'"
+jdk:
+	- oraclejdk8
+after_success:
+	- bash <(curl -s https://codecov.io/bash)
