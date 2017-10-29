@@ -124,4 +124,14 @@ public class TicTacToeTest {
 		assertEquals(0, game.playRound(5));
 		assertEquals(1, game.playRound(3));
 	}
+
+	@Test
+	public void testGetPlayer(){
+		TicTacToe game = new TicTacToe();
+		assertEquals('x', game.getPlayer());
+		game.changePlayer();
+		assertEquals('o', game.getPlayer());
+	}
+
+
 }
