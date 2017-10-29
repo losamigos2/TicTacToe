@@ -27,9 +27,9 @@ The [readme.md](https://github.com/losamigos2/TicTacToe/blob/master/README.md) f
 ## 5. How to run project on local machine
 In order to run the program on your local machine you need to run from the root of the project the command:
 
-<img src="images/Gradlerun.png" width="200">
+```./gradlew clean build run```
 
-```The program should run on either your git bash (Windows) or terminal (Linux or Mac)```
+*The program should run on either your git bash (Windows) or terminal (Linux or Mac)*
 
 ## 6. Team structure
 The team consists of 6 developers where each member has a specific role: developer, tester, administrator and product owner. The team strives for continuous delivery to make sure that the user/s of the program can have access to the most up to date version of the program. The teams strives to minimize the risks involved in deploying new versions of the program.
