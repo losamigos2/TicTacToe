@@ -6,11 +6,7 @@
 [![Build Status](https://travis-ci.org/losamigos2/TicTacToe.svg?branch=master)](https://travis-ci.org/losamigos2/TicTacToe)
 
 ### Code coverage
-[![codecov.io](https://codecov.io/github/losamigos2/TicTacToe/coverage.svg?branch=master)](https://codecov.io/github/losamigos2/TicTacToe/coverage.svg?branch=master)
-<a href="https://scan.coverity.com/projects/losamigos-tictactoe">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/14174/badge.svg"/>
-</a>
+[![codecov.io](https://codecov.io/github/losamigos2/TicTacToe/coverage.svg?branch=master)](https://codecov.io/gh/losamigos2/TicTacToe/branch/master)
 
 ### Documentation
 > [Design Report](https://github.com/losamigos2/TicTacToe/blob/master/docs/DesignReport.md)
