@@ -14,6 +14,24 @@ dependencies {
 	compile 'com.sparkjava:spark-core:2.6.0'
 
 }
+/*
+task fatJar(type: Jar) {
+	manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Example',
+        	'Implementation-Version': 1.0,
+        	'Main-Class': 'is.ru.tictactoe.TicTacToeUI'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}*/
+
+
+jar {
+   manifest{
+      attributes("Main-Class": "is.ru.tictactoe.TicTacToeUI")
+   }
+}
 
 run{
 	standardInput = System.in
@@ -22,4 +40,9 @@ run{
 task stage {
   dependsOn installDist
 }
+
+/*
+jar {
+   destinationDir project.file('/')
+}*/
 

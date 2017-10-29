@@ -1,2 +1,10 @@
 language: java
-before-deploy: "echo 'ready??'"
+deploy:
+  provider: releases
+  api_key:
+    secure: KEY
+  file: build/libs/TicTacToe.jar
+  skip_cleanup: true
+  on:
+    repo: TicTacToe
+    tags: true
