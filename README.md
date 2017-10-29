@@ -29,7 +29,7 @@
 
 > Java
 
-### Development paltforms:
+### Development platforms:
 > Windows
 
 > Linux
